@@ -20,7 +20,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view"
                 android:layout_width="match_parent"
-                android:layout_height="203dp"
+                android:layout_height="228dp"
                 android:onClick="inscricao"
                 app:cardCornerRadius="4dp">
 
@@ -29,28 +29,26 @@
                     android:layout_width="168dp"
                     android:layout_height="158dp"
                     android:layout_gravity="left"
-
                     app:srcCompat="@mipmap/imginscr" />
 
-                <TextView
+                <Button
                     android:id="@+id/info_text"
-                    style="@style/Widget.AppCompat.TextView"
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right"
-                    android:text="                                                                                                      https://processoseletivo.ifmt.edu.br/"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="inscricao"
+                    android:layout_gravity="center"
+                    android:text="inscricao"
                     android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
 
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="localizacao"
-                app:cardCornerRadius="4dp">
+                android:layout_height="290dp"
+                app:cardCornerRadius="4dp"
+                tools:ignore="DuplicateIds">
 
                 <ImageView
                     android:id="@+id/localizacao"
@@ -60,25 +58,46 @@
 
                     app:srcCompat="@mipmap/imgloc" />
 
-                <TextView
+                <Button
                     android:id="@+id/info_text"
                     style="@style/Widget.AppCompat.TextView"
                     android:layout_width="236dp"
                     android:layout_height="match_parent"
+                    android:onClick="localizacao"
                     android:layout_gravity="right"
-                    android:text="Entrada De Acesso A Br 158 - Radial, R. José Maurício Zampa, S/N - Jardim Nova Barra Norte, Barra do Garças - MT, 78607-899"
-                    android:textSize="20sp" />
+                    android:text="localização"
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateIds" />
 
             </androidx.cardview.widget.CardView>
 
-            <ImageButton
-                android:id="@+id/horário"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
                 android:layout_width="match_parent"
-                android:layout_height="273dp"
-                android:layout_weight="1"
-                android:onClick="Horário"
-                app:srcCompat="@android:drawable/" />
+                android:layout_height="371dp"
+                android:onClick="horario"
+                app:cardCornerRadius="4dp"
+                tools:ignore="DuplicateIds">
 
+                <ImageView
+                    android:id="@+id/horario"
+                    android:layout_width="168dp"
+                    android:layout_height="158dp"
+                    android:layout_gravity="left"
+
+                    app:srcCompat="@mipmap/imghor" />
+
+                <TextView
+                    android:id="@+id/info_text"
+                    style="@style/Widget.AppCompat.TextView"
+                    android:layout_width="236dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="right"
+                    android:text="                                                                                                                                                                     07:00 - 17:30"
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateIds" />
+
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
