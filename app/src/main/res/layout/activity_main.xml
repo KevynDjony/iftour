@@ -18,67 +18,91 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_view"
+                android:id="@+id/card_inscricao"
                 android:layout_width="match_parent"
-                android:layout_height="203dp"
+                android:layout_height="228dp"
                 android:onClick="inscricao"
+                app:cardBackgroundColor="#009325"
                 app:cardCornerRadius="4dp">
 
                 <ImageView
-                    android:id="@+id/Inscrição"
-                    android:layout_width="168dp"
-                    android:layout_height="158dp"
+                    android:id="@+id/img_inscricao"
+                    android:layout_width="221dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="left"
-
                     app:srcCompat="@mipmap/imginscr" />
 
-                <TextView
-                    android:id="@+id/info_text"
-                    style="@style/Widget.AppCompat.TextView"
-                    android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                <Button
+                    android:id="@+id/t_imscricao"
+                    android:layout_width="157dp"
+                    android:layout_height="87dp"
                     android:layout_gravity="right"
-                    android:text="                                                                                                      https://processoseletivo.ifmt.edu.br/"
+                    android:backgroundTint="@color/white"
+                    android:onClick="inscricao"
+                    android:text="inscricao"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
 
-
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_view"
+                android:id="@+id/card_location"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="localizacao"
+                android:layout_height="290dp"
+                app:cardBackgroundColor="#009325"
                 app:cardCornerRadius="4dp">
 
                 <ImageView
-                    android:id="@+id/localizacao"
-                    android:layout_width="168dp"
-                    android:layout_height="158dp"
+                    android:id="@+id/img_location"
+                    android:layout_width="223dp"
+                    android:layout_height="271dp"
                     android:layout_gravity="left"
 
                     app:srcCompat="@mipmap/imgloc" />
 
+                <Button
+                    android:id="@+id/bt_location"
+                    style="@style/Widget.AppCompat.TextView"
+                    android:layout_width="236dp"
+                    android:layout_height="189dp"
+                    android:layout_gravity="right"
+                    android:backgroundTint="@color/white"
+                    android:onClick="localizacao"
+                    android:text="Loocalização"
+                    android:textColor="#0B0B0B"
+                    android:textSize="20sp"
+                    app:rippleColor="#000000" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="371dp"
+                android:onClick="horario"
+                app:cardBackgroundColor="#009325"
+                app:cardCornerRadius="4dp"
+                tools:ignore="DuplicateIds">
+
+                <ImageView
+                    android:id="@+id/horario"
+                    android:layout_width="221dp"
+                    android:layout_height="258dp"
+                    android:layout_gravity="left"
+
+                    app:srcCompat="@mipmap/imghor" />
+
                 <TextView
                     android:id="@+id/info_text"
                     style="@style/Widget.AppCompat.TextView"
                     android:layout_width="236dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="170dp"
                     android:layout_gravity="right"
-                    android:text="Entrada De Acesso A Br 158 - Radial, R. José Maurício Zampa, S/N - Jardim Nova Barra Norte, Barra do Garças - MT, 78607-899"
+                    android:text="                                                                                                                                                                     07:00 - 17:30"
                     android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
-
-            <ImageButton
-                android:id="@+id/horário"
-                android:layout_width="match_parent"
-                android:layout_height="273dp"
-                android:layout_weight="1"
-                android:onClick="Horário"
-                app:srcCompat="@android:drawable/" />
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
